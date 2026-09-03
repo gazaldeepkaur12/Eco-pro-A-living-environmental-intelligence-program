@@ -73,5 +73,32 @@ data-driven approaches.
                Python
                   ↓
         Rule-based interpretation
+
+##🛠️ Tech
+Python
+Arduino / C++
+Wokwi
+CSV
+Git & GitHub
+
+##Next steps
+Connect the Arduino and Python systems
+Collect real sensor data
+Add environmental trend analysis
+Visualize changes over time
+Test the system with physical hardware
+
+##💡 Why I'm building it
+
+I'm interested in what happens when biology, environmental science and technology overlap and wanted to dip my fingers in technical work.
+
+Eco-pro is my way of implementing python and arduino with my biology backgroud  and actually building and improving things as I learn.
+Explore anomaly detection and machine learning
+
+Built and documented by Gazaldeep Kaur
+
+This project is a work in progress.
+
+
                   ↓
        Plant-specific recommendation
