@@ -10,7 +10,7 @@ import os
 from datetime import datetime
 
 
-LOG_FILE = "garden_log.csv"
+LOG_FILE = "../data/garden_log.csv"
 
 PLANTS = {
     "TOMATO_01": {
