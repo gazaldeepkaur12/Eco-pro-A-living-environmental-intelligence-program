@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "author": "gazaldeep kaur",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-nano", "id": "nano", "top": -62.4, "left": -58.1, "attrs": {} },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -120,
+      "left": -115.75,
+      "rotate": 90,
+      "attrs": { "value": "10000" }
+    },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -249.3, "left": -5.4, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": 27.5, "left": 105.4, "attrs": {} }
+  ],
+  "connections": [
+    [ "pot1:GND", "nano:GND.1", "black", [ "v28.8", "h-48" ] ],
+    [ "nano:A0", "pot1:SIG", "green", [ "v134.4", "h153.6" ] ],
+    [ "nano:5V", "pot1:VCC", "red", [ "v105.6", "h86.4" ] ],
+    [ "dht1:VCC", "nano:5V", "red", [ "v0", "h-76.8", "v163.2", "h0", "v0", "h134.4" ] ],
+    [ "dht1:GND", "nano:VIN", "black", [ "v0", "h172.8", "v144", "h-19.2" ] ],
+    [ "dht1:SDA", "nano:2", "green", [ "v57.6", "h38.5" ] ],
+    [ "r1:1", "dht1:SDA", "green", [ "h105.6", "v9.6" ] ],
+    [ "r1:2", "dht1:VCC", "green", [ "h96", "v-49.2" ] ]
+  ],
+  "dependencies": {}
+}
